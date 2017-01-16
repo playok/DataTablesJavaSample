@@ -17,7 +17,6 @@
 		System.out.println("KEY : " + key + " VALUE [" + request.getParameter(key) + "]");
 	}
 
-	String length = request.getParameter("length");
 	int displayStart = Integer.parseInt(request.getParameter("iDisplayStart"));
 	int displayEnd = Integer.parseInt(request.getParameter("iDisplayLength"));
 	String sEcho = request.getParameter("sEcho");
