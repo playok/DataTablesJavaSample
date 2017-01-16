@@ -24,10 +24,18 @@ $(document).ready(function() {
     	"sAjaxSource" : 'server_processing.jsp',
     	"iDisplayStart" : 0,
     	"language": {
-			           "infoEmpty": "출력할 데이터가 없습니다.",
-			           "processing": "데이터를 로드하는 중입니다.",
-			           "info": " _PAGE_ / _PAGES_ "
-			         }
+			"infoEmpty": "출력할 데이터가 없습니다.",
+			"processing": "데이터를 로드하는 중입니다.",
+			"info": " _PAGE_ / _PAGES_ "
+	},
+	"columns": [
+       	    { "name": "rnum" },
+       	    { "name": "engine" },
+       	    { "name": "browser" },
+       	    { "name": "platform" },
+       	    { "name": "version" },
+       	    { "name": "grade" }
+       	  ]
     } );
 } );
 
