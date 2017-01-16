@@ -41,7 +41,7 @@
 	int listCnt = 0;
 
 	try {
-		conn = DriverManager.getConnection("jdbc:oracle:thin:@12.0.0.1:1521:TBNAME", "ORA_ID", "ORA_PW");
+		conn = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:TBNAME", "ORA_ID", "ORA_PW");
 		String sql = "SELECT count(*) totalCnt FROM " + table;
 		PreparedStatement ps = conn.prepareStatement(sql);
 		ResultSet rs = ps.executeQuery();
